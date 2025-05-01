@@ -183,10 +183,17 @@ a:hover {
 
 header {
     /* background: var(--dark-color); */
-    background: linear-gradient(to right, var(--gradient-color-1), var(--gradient-color-2));
+    /* background: linear-gradient(to right, var(--gradient-color-1), var(--gradient-color-2)); */
+    background: linear-gradient(to bottom, rgba(11, 28, 44, 0.4), rgba(20, 43, 77, 0.4)); /* add transparency */
+
+
+    background-blend-mode: overlay;
+    backdrop-filter: blur(10px); /* adds blur effect */
+    -webkit-backdrop-filter: blur(10px); /* for Safari */
     color: #fff;
-    padding: 10px 0;
-    border-bottom: 3px solid var(--dark-color);
+    padding: 10px 0px;
+    
+    border-bottom: 2.5px solid var(--dark-color);
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -243,7 +250,7 @@ main .container {
 }
 
 .hero_container {
-    margin-top: 4rem;
+    margin-top: 4.2rem;
     background: linear-gradient(90deg, #8e2de2, #4a00e0, #00c6ff);
 
     /* background: linear-gradient(to right, #434343, #262626, #1c1c1c); */
@@ -731,12 +738,13 @@ main .container {
 }
 
 .My_skills .skills .skills_content .title {
-    background: linear-gradient(to right, var(--gradient-color-1), var(--info-color));
+    background: linear-gradient(to right, var(--gradient-color-1), var(--gradient-color-2));
     padding: .5rem;
     width: 100%;
     border-radius: 5px;
     margin-bottom: 0.5rem;
-    box-shadow: var(--info-color) 0 0 150px;
+    /* box-shadow: var(--info-color) 0 0 150px; */
+    border-left: 1.5px solid var(--info-color);
 
 }
 
@@ -1132,14 +1140,34 @@ footer .topUP{
     background: var(--gradient-color-1);
     color: #fff;
     border: 1px solid var(--info-color);
-    padding: 10px 15px;
-    border-radius: 50%;
+    padding: 12px 14px;
+    border-radius: 50px;
     cursor: pointer;
     box-shadow: 0 0 40px var(--info-color);
     transition: all 0.5s ease;
     position: fixed;
+    font-size: 16px;
+    
+    line-height: 1;
 
 }
+
+/* footer .topUP {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--gradient-color-1);
+    color: #fff;
+    border: 1px solid var(--info-color);
+    padding: 12px 14px; 
+    border-radius: 12px; 
+    cursor: pointer;
+    box-shadow: 0 0 20px var(--info-color);
+    transition: all 0.3s ease;
+    font-size: 16px;
+    line-height: 1;
+} */
+
 /* Smaller screens (phones) */
 @media screen and (max-width: 475px) {
     nav .logo h3 {
