@@ -67,8 +67,8 @@ a:hover {
 }
 
 .btn {
-    background-color: var(--secondary-color);
-    padding: 10px 15px;
+    background-color: var(--info-color);
+    padding: 10px 30px;
     color: #fff;
     border-radius: 5px;
     border: 1px solid var(--secondary-color);
@@ -80,6 +80,14 @@ a:hover {
     transition: all 0.5s ease;
     border: 1px solid #fff;
 
+}
+
+.form-control{
+    padding: .5rem;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
 }
 
 
@@ -440,6 +448,7 @@ main .container {
     transition: all 0.5s ease;
 }
 
+
 @keyframes gradientMove {
     0% {
         background-position: 0% 50%;
@@ -788,6 +797,128 @@ main .container {
     line-height: 20px;
     font-weight: bold;
 }
+
+
+/* myContact */
+
+.myContact .Contact_info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.myContact .Contact_info .get_info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 35%;
+    background: linear-gradient(-45deg, #8e2de2, #4a00e0, #00c6ff);  
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.myContact .Contact_info .get_info h3,
+.myContact .Contact_info .getin_touch h3{
+    padding-bottom: 1.5rem ;
+    color: #fff;
+}
+
+.myContact .Contact_info .get_info .info{
+    padding: 1rem 0rem;
+    display: flex;
+    align-items: center;
+
+}
+.myContact .Contact_info .get_info .info .icon{
+    margin-right: .5rem;
+}
+.myContact .Contact_info .get_info .info .icon i{
+    border: 1px solid var(--info-color) ;
+    padding: 15px;
+    border-radius: 5px;
+    background: var(--gradient-color-1);
+
+
+}
+
+.myContact .Contact_info .getin_touch{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 75%;
+}
+
+.myContact .Contact_info .getin_touch .row{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+
+}
+.myContact .Contact_info .getin_touch .row .form_group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+
+.myContact .Contact_info .getin_touch .col{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.myContact .Contact_info .getin_touch .col .form_group,
+.myContact .Contact_info .getin_touch .col .form_group{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.myContact .Contact_info .getin_touch .col .form_group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.myContact .Contact_info .getin_touch .col .form_group textarea{
+    height: 100px;
+}
+
+
+.myContact .Contact_info .getin_touch .col .form_group textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 15px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical; /* allow user to resize vertically only */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .myContact .Contact_info .getin_touch .col .form_group textarea:focus {
+    outline: none;
+    border-color: var(--info-color) ;
+    box-shadow: 0 0 20px var(--info-color);
+  }
+
+
+
+
+
+
+
+
+
 
 
 /* footer */
